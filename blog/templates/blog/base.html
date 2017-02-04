@@ -1,0 +1,18 @@
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/first.css' %}" >
+    <meta charset="UTF-8">
+    <title>BVVB priyanka</title>
+</head>
+<body>
+<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+
+<a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
+
+
+
+{% block content %}
+{% endblock %}
+</body>
+</html>
